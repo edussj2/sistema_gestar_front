@@ -95,7 +95,6 @@
 
 @media screen and (max-width: 850px) {
     .section-presentacion{
-        background-image: url('../../../../../../assets/img/var/Fertilidad_GestarPeru.png');
         background-size: 1250px calc(100vh - 85px);
         background-position: 50% 50%;
         background-repeat: no-repeat;
