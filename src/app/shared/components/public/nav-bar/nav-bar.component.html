@@ -1,0 +1,127 @@
+<nav class="navbar-home">
+    
+    <!-- Logo -->
+    <div class="logo_navbar-home">
+        <img src="./assets/img/logo/Logo_GestarPeru.png" alt="Logo Gestar">
+    </div>
+
+    <!-- Opciones -->
+    <div class="options_navbar-home">
+
+        <!-- Links -->
+        <ul class="links_navbar-home">
+            <li>
+                <a href="">
+                    Tratamientos
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Especialistas
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Testimonios
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Conócenos
+                </a>
+            </li>
+        </ul>
+
+        <!-- Sociales -->
+        <ul class="socials_navbar-home">
+            <li>
+                <img src="./assets/img/icons/Facebook_GestarPeru.png" alt="Facebook Gestar Perú">
+            </li>
+            <li>
+                <img src="./assets/img/icons/Instagram_GestarPeru.png" alt="Instagram Gestar Perú">
+            </li>
+            <li>
+                <img src="./assets/img/icons/TikTok_GestarPeru.png" alt="Tiktok Gestar Perú">
+            </li>
+            <li>
+                <img src="./assets/img/icons/Youtube_GestarPeru.png" alt="Youtube Gestar Perú">
+            </li>
+        </ul>
+
+        <!-- Botones -->
+        <div class="buttons_navbar-home">
+            <button class="button-custom button-morado">
+                Blog
+            </button>
+            <button class="button-custom button-morado">
+                Pide tu cita
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Toggle Button -->
+    <div class="toggle-container_navbar-home">
+        <div class="toggle_navbar-home" (click)="flagNavBar = !flagNavBar">
+            <i class="fas" [ngClass]="{'fa-bars': !flagNavBar, 'fa-times': flagNavBar}"></i>
+        </div>
+    </div>
+    
+</nav>
+
+
+<!-- Nav bar responsive -->
+<nav class="navbar-home-responsive" [ngClass]="{'active-navbar-home-responsive' : flagNavBar}">
+    
+    <!-- Links -->
+    <ul class="links_navbar-home-responsive">
+        <li>
+            <a href="">
+                Tratamientos
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Especialistas
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Testimonios
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Conócenos
+            </a>
+        </li>
+    </ul>
+
+    
+    <!-- Botones -->
+    <div class="buttons_navbar-home-responsive">
+        <button class="button-custom button-morado">
+            Blog
+        </button>
+        <button class="button-custom button-morado">
+            Pide tu cita
+        </button>
+    </div>
+
+    <!-- Sociales -->
+    <ul class="socials_navbar-home-responsive">
+        <li>
+            <img src="./assets/img/icons/Facebook_GestarPeru.png" alt="Facebook Gestar Perú">
+        </li>
+        <li>
+            <img src="./assets/img/icons/Instagram_GestarPeru.png" alt="Instagram Gestar Perú">
+        </li>
+        <li>
+            <img src="./assets/img/icons/TikTok_GestarPeru.png" alt="Tiktok Gestar Perú">
+        </li>
+        <li>
+            <img src="./assets/img/icons/Youtube_GestarPeru.png" alt="Youtube Gestar Perú">
+        </li>
+    </ul>
+
+</nav>

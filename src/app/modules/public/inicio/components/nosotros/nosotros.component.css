@@ -1,0 +1,90 @@
+/* Contenedor */
+.section-nosotros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #DCDCDC;
+    overflow: hidden;
+}
+
+/* Card */
+.card_section-nosotros{
+    width: 50%;
+    height: 340px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.padding-text-card{
+    padding: 0 4rem;
+}
+.card_section-nosotros img{
+    width: 100%;
+    object-fit: cover;
+}
+.card_section-nosotros h2{
+    font-family: var(--font-league);
+    font-size: var(--h1-font-size);
+    margin: 0 0 .5rem;
+}
+.card_section-nosotros h2 span{
+    color: var(--color-primary);
+}
+.card_section-nosotros p{
+    font-family: var(--font-sans);
+    font-size: var(--h3-font-size);
+    color: var(--color-gray-dark);
+    margin: 0 0 .5rem;
+}
+.card_section-nosotros span{
+    font-weight: 600;
+}
+.card_section-nosotros button{
+    width: 160px;
+    margin-top: .5rem;
+    font-size: var(--h3-font-size);
+}
+
+
+@media screen and (max-width: 1250px) {
+    /* Contenedor */
+    .section-nosotros{
+        flex-direction: column;
+    }
+    .card_section-nosotros{
+        height: auto;
+    }
+    .padding-text-card{
+        padding: 2.5rem 3.25rem 2.5rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .card_section-nosotros{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .card_section-nosotros{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 450px) {
+    /* Card */
+    .card_section-nosotros{
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .padding-text-card{
+        padding: 2.5rem 3rem;
+        text-align: center;
+    }
+    .card_section-nosotros button{
+        margin: .5rem auto 0;
+    }
+}

@@ -1,0 +1,80 @@
+<section class="section-preguntas">
+
+    <div class="title-section-preguntas">
+        <h2>¿Preguntas frecuentes?</h2>
+    </div>
+    
+    <div class="container-pregunta">
+        <div class="titulo-pregunta" (click)="flag1 = !flag1">
+            <h2>1. Me ligaron las trompas uterinas ¿Podría quedar embarazada?</h2>
+            <img src="./assets/img/icons/Flecha_GestarPeru.png" alt="Flecha" [ngClass]="{'flecha-faq' : flag1}">
+        </div>
+        <div class="texto-pregunta" [ngClass]="{'activo-faq' : flag1}">
+            <p>
+                Sí puedes, realizando una operación para reconstruir tus trompas uterinas o con tratamiento de 
+                Fecundación In Vitro. Es recomendable realizar una Fecundación In Vitro si tu edad es de 38 años a más.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-pregunta">
+        <div class="titulo-pregunta" (click)="flag2 = !flag2">
+            <h2>2. ¿Qué es la Fecundación In Vitro?</h2>
+            <img src="./assets/img/icons/Flecha_GestarPeru.png" alt="Flecha" [ngClass]="{'flecha-faq' : flag2}">
+        </div>
+        <div class="texto-pregunta" [ngClass]="{'activo-faq' : flag2}">
+            <p>
+                La Fecundación In Vitro consiste en unir el óvulo con el espermatozoide en un laboratorio 
+                especializado por un embriólogo capacitado. El embrión formado se incuba por unos días hasta que se 
+                formen varias células luego de lo cual se implanta al útero como una semilla. Los embriones que sobran 
+                se guardan (criopreservación) mediante una nueva técnica de vitrificación por el tiempo que sea necesario 
+                y cuando se descongelan la tasa de sobrevida es más del 95% sin ningún daño del embrión.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-pregunta">
+        <div class="titulo-pregunta" (click)="flag3 = !flag3">
+            <h2>3. Tuve un(a) hijo(a) hace muchos años, cumplí los 35 años ¿ Por qué no he podido quedar embarazada ?</h2>
+            <img src="./assets/img/icons/Flecha_GestarPeru.png" alt="Flecha" [ngClass]="{'flecha-faq' : flag3}">
+        </div>
+        <div class="texto-pregunta" [ngClass]="{'activo-faq' : flag3}">
+            <p>
+                A partir de los 35 años el daño del ADN de los óvulos se acelera y muchas veces no es visible ni 
+                en ecografías ni en análisis, por lo tanto, si no has logrado quedar embarazada deberías darte prisa 
+                y tener en cuenta visitar a nuestros Expertos en Fertilidad.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-pregunta">
+        <div class="titulo-pregunta" (click)="flag4 = !flag4">
+            <h2>4. ¿En qué consiste la Inseminación Intrauterina?</h2>
+            <img src="./assets/img/icons/Flecha_GestarPeru.png" alt="Flecha" [ngClass]="{'flecha-faq' : flag4}">
+        </div>
+        <div class="texto-pregunta" [ngClass]="{'activo-faq' : flag4}">
+            <p>
+                La Inseminación Intrauterina consiste en mejorar el semen y espermatozoides en el laboratorio mediante 
+                técnicas múltiples que duran entre 2 a 3 horas para colocarse los mejores en el interior del útero cerca 
+                de las trompas uterinas aumentando posibilidad de embarazo. Es una técnica casi asintomática con mínimo dolor.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-pregunta">
+        <div class="titulo-pregunta" (click)="flag5 = !flag5">
+            <h2>5. ¿Los Especialista del Centro realizan todos los tratamientos de Fertilidad?</h2>
+            <img src="./assets/img/icons/Flecha_GestarPeru.png" alt="Flecha" [ngClass]="{'flecha-faq' : flag5}">
+        </div>
+        <div class="texto-pregunta" [ngClass]="{'activo-faq' : flag5}">
+            <p>
+                Todos nuestros ginecólogos son Expertos en Fertilidad, con amplia experiencia de más de 20 años; además 
+                de ser reconocidos nacional e internacionalmente llegando a ocupar los primeros puestos en Instituciones 
+                reconocidas. Gran parte de nuestro Staff de médicos están certificados por la Red Latinoamericana de
+                 Reproducción Asistida, por lo tanto, están sumamente calificados para realizar el tratamiento que vaya a 
+                 ser necesario en tu caso.
+            </p>
+        </div>
+    </div>
+
+</section>

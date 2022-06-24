@@ -1,0 +1,61 @@
+.section-blog{
+    width: 100%;
+    min-height: 50vh;
+    background: url('../../../../../../assets/img/var/Bebe_GestarPeru.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.texto_section-blog{
+    width: 350px;
+    margin-right: 3.5rem;
+    padding: .75rem 2rem;
+    text-align: right;
+}
+.texto_section-blog h2{
+    font-family: var(--font-league);
+    font-size: 3.5rem;
+    color: #FFF;
+    margin: 0;
+}
+.texto_section-blog h2 span{
+    color: var(--color-primary);
+}
+.texto_section-blog p{
+    font-family: var(--font-sans);
+    font-size: var(--h3-font-size);
+    color: #FFF;
+    line-height: 23px;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .section-blog{
+        background-attachment: initial;
+    }
+}
+@media screen and (max-width: 750px) {
+    .section-blog{
+        justify-content: center;
+        height: 365px;
+        background-size: 850px 470px;
+        background-position: 50%;
+    }
+    .texto_section-blog{
+        width: 85%;
+        margin: 0 auto;
+        padding: 2.75rem 2rem 0rem;
+        text-align: center;
+    }
+    .texto_section-blog h2{
+        font-size: 2.5rem;
+    }
+    .texto_section-blog p{
+        font-size: var(--normal-font-size);
+        line-height: 20px;
+    }
+}

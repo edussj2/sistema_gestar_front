@@ -1,0 +1,74 @@
+/* Variables Styles */
+@import url('./assets/styles/variables.css');
+
+
+/* === Botontes Home ==== */
+.button-custom {
+    background: transparent;
+    border-radius: 8px;
+    padding: .35rem .5rem .25rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--font-league);
+    font-size: var(--normal-font-size);
+	display: block;
+	position: relative;
+    overflow: hidden;
+}
+.button-celeste{
+    border: 2px solid var(--color-primary);
+    color: var(--color-white);
+}
+.button-celeste::before{
+    background: var(--color-primary);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.button-morado{
+    border: 2px solid var(--color-secondary);
+    color: var(--color-gray-dark);
+    transition: .5s;
+}
+.button-morado::before{
+    background: var(--color-secondary);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.button-morado:hover{
+    color: #FFF;
+}
+.button-custom:before{
+    width: 110%;
+    height: 0%;
+}
+.button-custom:hover::before{
+    height: 110%;
+}
+.button-custom:active{
+    transform: scale(0.9);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transition: .4s;
+}
+
+
+
+/* === Botontes Deshabilitado ==== */
+.button_disabled{
+    opacity: 0.5;
+    background: var(--color-gray);
+    cursor: no-drop;
+}
+.button_disabled:active{
+    transform: scale(1);
+    box-shadow: none;
+}

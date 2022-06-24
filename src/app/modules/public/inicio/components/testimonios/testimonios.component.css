@@ -1,0 +1,175 @@
+/* Section */
+.section-testimonios{
+    width: 100%;
+    height: calc(100vh - 85px);
+    background: url('../../../../../../assets/img/var/MamaYBebe_GestarPeru.png');
+    background-size: 100% calc(100vh - 85px);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.testimonios-slider_testimonios,
+.titulos_testimonios{
+    margin-top: .5rem;
+    width: 50%;
+}
+
+
+/* Testimonios*/
+.testimonios-slider_testimonios{
+    overflow: hidden;
+}
+.card-slider_testimonios{
+    width: 320px;
+    overflow: hidden;
+    margin: 1rem auto;
+    background: #FFF;
+    border-radius: 8px;
+
+}
+.card-slider_testimonios img{
+    width: 100%;
+}
+.card-slider_testimonios p{
+    margin: 0;
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    color: var(--color-gray);
+    font-family: var(--font-sans);
+}
+.card-slider_testimonios h6{
+    margin: 0;
+    padding: 0 1rem 1.25rem;
+    font-size: var(--small-font-size);
+    color: var(--color-gray-dark);
+    font-family: var(--font-sans);
+}
+.button_testimonios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+.button_testimonios button{
+    font-size: var(--h3-font-size);
+    transition: .3s;
+}
+.button_testimonios button:hover{
+    background: var(--color-primary);
+}
+
+
+/* Títulos*/
+.titulos_testimonios{
+    height: calc(100vh - 85px);
+    padding: 2.25rem 1rem 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.up-imagen_testimonios{
+    padding: 2.5rem 0;
+}
+.up-imagen_testimonios h2{
+    color: #FFF;
+    font-size: var(--h1-font-size);
+    font-family: var(--font-league);
+}
+.contadores_testimonios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contador_testimonios{
+    width: 50%;
+    text-align: left;
+}
+.contador_testimonios h4{
+    color: #FFF;
+    font-size: 3rem;
+    font-family: var(--font-league);
+    margin: 0;
+}
+.contador_testimonios h4 span{
+    color: var(--color-primary);
+}
+.contador_testimonios p{
+    color: #FFF;
+    font-family: var(--font-sans);
+    font-size: var(--h2-font-size);
+}
+
+.down-imagen_testimonios{
+    margin-bottom: 3.75rem;
+    text-align: right;
+    padding: 0 2rem 0;
+}
+.down-imagen_testimonios h2{
+    font-family: var(--font-league);
+    font-size: var(--h1-font-size);
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    .section-testimonios{
+        background-size: 900px calc(100vh - 85px);
+        background-position: 50% 50%;
+        flex-direction: column-reverse;
+    }
+    .testimonios-slider_testimonios,
+    .titulos_testimonios{
+        margin: 0;
+        width: 100%;
+    }
+
+    
+    .titulos_testimonios{
+        height: auto;
+        padding: 1rem .5rem .25rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .up-imagen_testimonios{
+        padding: .5rem 0;
+        text-align: center;
+    }
+    .up-imagen_testimonios h2{
+        font-size: var(--h2-font-size);
+    }
+
+    .contador_testimonios{
+        text-align: center;
+    }
+    .contador_testimonios h4{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    .contador_testimonios p{
+        font-size: var(--normal-font-size);
+    }
+
+    .down-imagen_testimonios{
+        display: none;
+    }
+
+    .card-slider_testimonios{
+        width: 260px;
+        margin: 0 auto 1rem;
+        border: 1px solid #DCDCDC;
+    }
+    .card-slider_testimonios p{
+        text-align: justify;
+    }
+    .button_testimonios{
+        padding: .25rem;
+    }
+    .button_testimonios button{
+       background: var(--color-primary);
+    }
+}
