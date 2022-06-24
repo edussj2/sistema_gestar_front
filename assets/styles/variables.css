@@ -1,0 +1,101 @@
+/* Fonts Styles */
+@import url('./fonts.css');
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+    
+    /*========== Colors ==========*/
+    --color-red: #dc3545;
+    --color-orange: #fd7e14;
+    --color-yellow: #ffc107;
+    --color-green: #28a745;
+    --color-white: #fff;
+    --color-gray: #6c757d;
+    --color-gray-dark: #343a40;
+
+    /* ==== Colors Base ===== */
+    --color-primary: #78c1cf;
+    --color-secondary: #b258a7;
+    --color-primary-ligth: #70e2f8;
+  
+    /*========== Font and typography ==========*/
+    --font-sans: 'DM Sans', sans-serif;
+    --font-league: 'League Spartan', sans-serif;
+    --font-honey: 'hello honey - Personal Use';
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-bold: 600;
+    --font-regular: 500;
+    --font-ligth: 300;
+  
+    /*========== z index ==========*/
+    --z-index-basic: 10;
+    --z-index-medium: 100;
+    --z-index-bold: 250;
+}
+  
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 3.25rem;
+        --h1-font-size: 2.15rem;
+        --h2-font-size: 1.35rem;
+        --h3-font-size: 1.15rem;
+        --normal-font-size: .9rem;
+        --small-font-size: .860rem;
+        --smaller-font-size: .800rem;
+    }
+}
+  
+  
+  
+  /*=============== BASE ===============*/
+* , 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body { 
+    height: 100%; 
+}
+body { 
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0; 
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3 {
+    color: var(--color-gray);
+    font-weight: var(--font-bold);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    height: auto;
+    object-fit: cover;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+  
